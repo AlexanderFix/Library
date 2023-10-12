@@ -6,7 +6,7 @@ html {
 }
 
 .wrapper {
-    
+
     max-width: 1440px;
     min-height: 100%;
     display: flex;
@@ -53,12 +53,12 @@ nav a {
     font-weight: 400;
     line-height: 50px;
     /* 250% */
-   
+
 }
 
 nav a:visited {
     color: #fff;
-   
+
 }
 
 .menu_nav {
@@ -66,12 +66,12 @@ nav a:visited {
     align-items: center;
     justify-content: space-around;
     padding: 20px 20px;
- 
-  position: relative;
+
+    position: relative;
 }
 
 nav {
-    
+
     display: flex;
     align-items: center;
 
@@ -87,8 +87,8 @@ nav li a:hover {
     display: none;
     width: 40px;
     height: 25px;
- position: relative;
-    transition: 1s ;
+    position: relative;
+    transition: 1s;
     margin: auto 20px auto 20px;
 
 }
@@ -99,34 +99,41 @@ nav li a:hover {
     height: 2px;
     width: 100%;
     background-color: #fff;
-    transition: .3s ;
+    transition: .3s;
     top: 50%;
 }
-.burger_menu::after,.burger_menu::before{
+
+.burger_menu::after,
+.burger_menu::before {
     content: '';
     height: 2px;
     width: 100%;
     background-color: #fff;
     position: absolute;
-    transition: .3s ;
+    transition: .3s;
     left: 0;
 }
-.burger_menu::before{
+
+.burger_menu::before {
     top: 0;
 }
+
 .burger_menu::after {
     bottom: 0;
 }
-.burger.active{
+
+.burger.active {
     transform: scale(0);
 }
-.burger_menu.active::after{
-transform: rotate(45deg);
-top: 50%;
+
+.burger_menu.active::after {
+    transform: rotate(45deg);
+    top: 50%;
 }
-.burger_menu.active::before{
-top: 50%;
-transform: rotate(-45deg);
+
+.burger_menu.active::before {
+    top: 50%;
+    transform: rotate(-45deg);
 }
 
 
@@ -209,9 +216,11 @@ main {
     padding: 20px;
     margin-bottom: 40px ; */
 }
+
 .image_about_sm {
     display: none;
 }
+
 .image_about img {
     width: 32%;
     /* max-width: 450px; */
@@ -678,7 +687,8 @@ main {
     align-items: flex-end;
     margin: 20px 20px;
     position: relative;
-    width: 456px;
+    max-width: 456px;
+    width: 100%;
     height: 253px;
     flex-shrink: 0;
 }
@@ -695,7 +705,8 @@ main {
 }
 
 .find_card {
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     height: 453px;
     flex-shrink: 0;
     margin: 0 20px;
@@ -715,30 +726,26 @@ main {
 }
 
 .check_card {
-    width: 600px;
+    width: 100%;
     height: 386px;
     flex-shrink: 0;
     border: 3px solid #BB945F;
-    background: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 22px;
+    padding: 20px 18px;
 }
 
-.check_card :nth-child(3) {
-    margin: 25px 20px;
-}
+
 
 .find_card form {
-    width: 560px;
-    margin: 19px 20px;
-    height: 272px;
+    /* width: 100%; */
     flex-shrink: 0;
-    background: #BB945F;
 }
 
-.find_card p {
+.check_card p {
+    display: block;
     color: #000;
     font-family: Forum;
     font-size: 30px;
@@ -747,16 +754,26 @@ main {
     line-height: 50px;
     /* 166.667% */
     letter-spacing: 0.6px;
-    margin: 19px 20px;
+    width: 100%;
+    margin: 20px 0 20px 20px;
+
+
+}
+
+.find_card form {
+    padding: 0 20px;
 }
 
 .find_card input {
-    width: 520px;
+    width: 100%;
     height: 66px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
-    margin: 0 20px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    padding: 0 20px;
+    font-family: Forum;
 }
 
 .find_card button {
@@ -774,6 +791,13 @@ main {
     border-radius: 2px;
     border: 1px solid #0C0C0E;
     transition: 0.3s;
+    margin: 20px 20px;
+}
+
+.form_card {
+    width: 100%;
+    background: #BB945F;
+
 }
 
 .cards button:hover {
@@ -816,9 +840,10 @@ main {
 
 footer {
     width: 100%;
-    height: 250px;
+    height: 100%;
     background: #0C0C0E;
     margin-top: 60px;
+    padding: 0 20px;
 }
 
 
@@ -826,11 +851,14 @@ footer {
 .footer_info {
     display: flex;
     justify-content: space-between;
-    margin: 20px 20px 0px 20px;
+    margin-top: 20px;
+
+    width: 100%;
 }
 
 .footer_info a {
-    width: 229px;
+    /* max-width: 229px; */
+    width: 50%;
     flex-shrink: 0;
     color: #FFF;
     font-family: Inter;
@@ -842,7 +870,8 @@ footer {
 }
 
 .footer_info p {
-    width: 229px;
+
+    width: 50%;
     flex-shrink: 0;
     color: #FFF;
     font-family: Inter;
@@ -876,14 +905,14 @@ footer {
     font-weight: 400;
     line-height: 20px;
     /* 133.333% */
-    margin: 10px 20px 30px 20px;
+    margin-top: 10px;
 }
 
 footer hr {
-    width: 97.2%;
+    width: 100%;
     height: 1px;
     background: #FFF;
-    margin-left: 20px;
+    margin-top: 30px;
 
 }
 
@@ -892,7 +921,6 @@ footer hr {
     justify-content: space-between;
     color: #fff;
     margin: 44px 0;
-    padding: 0 20px;
     width: 100%;
     height: 22px;
     flex-shrink: 0;
@@ -922,33 +950,39 @@ footer hr {
     letter-spacing: 2px;
     margin-left: 90px;
 }
+
 @media (max-width: 1230px) {
 
     .books {
-flex-direction: column;
+        flex-direction: column;
         align-items: center;
         width: 100%;
         margin: 0 auto;
     }
 }
+
 @media screen and (max-width: 1145px) {
     .menu_nav {
         align-self: start;
         flex-direction: column;
         position: relative;
         padding: 0;
-        
+
 
     }
+
     nav {
         order: 2;
         transition: .3s all;
-        width: 200px;position: relative;
+        width: 200px;
+        position: relative;
         overflow: visible;
-        
+
         z-index: 2;
     }
-    nav ul {position: absolute;
+
+    nav ul {
+        position: absolute;
         top: -500px;
         right: 0;
         background-color: #0C0C0E;
@@ -958,106 +992,174 @@ flex-direction: column;
         align-items: center;
         margin: 0;
         transition: .3s all;
-z-index: 1;
+        z-index: 1;
     }
+
     nav li {
         text-align: center;
         width: 100%;
     }
+
     .nav_active {
         display: block;
-        overflow:visible;
-    top: 0;
+        overflow: visible;
+        top: 0;
     }
 
     .burger_menu {
         display: block;
     }
 
-  .svg_sm{height: 90px;
-    display: flex;
-    z-index: 3;
-    align-items: center;
-    justify-content: center;
-   background-color: #0C0C0E;
-   width: 100%;
+    .svg_sm {
+        height: 90px;
+        display: flex;
+        z-index: 3;
+        align-items: center;
+        justify-content: center;
+        background-color: #0C0C0E;
+        width: 100%;
 
-  }
-  .check_seasons{
-    margin-right: 20px;
-  }
+    }
+
+    .check_seasons {
+        margin-right: 20px;
+    }
+
     .desserts_cakes {
         width: 100%;
     }
+
     .cards {
         justify-content: center;
     }
-    .check_card {
-        width: 100%;
-    }
+
     .get_card {
         margin-top: 40px;
         align-items: center;
-        width: 500px;
     }
+
+    .get_card p {
+        text-align: center;
+    }
+
     .contact_info {
         display: flex;
         flex-direction: column;
     }
+
     .contact {
         width: 100%;
     }
+
     .contact_info img {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .image_about_sm {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        .image_about_sm {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .image_about_sm img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image_about {
+            display: none;
+        }
+
+        .footer_rss a {
+            margin-left: 0;
+        }
+
     }
-    .image_about_sm img {
-        width: 100%;
-        object-fit: cover;
+
+    @media screen and (max-width: 600px) {
+        nav {
+            width: 150px;
+        }
+
+        .book {
+            max-width: 350px;
+            margin-left: 5px;
+        }
+
+        .book p {
+            width: 100%;
+            padding-right: 20px;
+            margin-bottom: 300px;
+        }
+
+        .seasons {
+            margin: 40px auto;
+            max-width: 300px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu li {
+            gap: 15px;
+        }
+
+        .find_card {
+            max-width: 500px;
+        }
+
+        .footer_rss a {
+            font-size: 16px;
+        }
+
+        .footer_rss p {
+            font-size: 16px;
+        }
     }
-    .image_about {
-        display: none;
-    }
-}
-@media screen and (max-width: 600px) {
-    nav {
-        width: 150px;
-    }
-    .book{
-        max-width: 350px;
-        margin-left: 5px;
-    }
-    .book p {
-        width: 100%;
-        padding-right: 20px;
-        margin-bottom: 300px;
-    }
-    .seasons {
-        margin: 40px auto;
-        max-width: 300px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
 }
 
 @media screen and (max-width: 500px) {
     header h1 {
         font-size: 20px;
         margin: auto 10px;
-}
-.book {
-    max-width: 320px;
-}
-.menu li {
-        gap: 15px;
     }
+
+    .book {
+        max-width: 320px;
+    }
+
+    .cards {
+        margin: 20px 20px;
+    }
+
+    .find_card {
+        width: 100%;
+    }
+
+    .footer_info a {
+        font-size: 14px;
+        width: 60%;
+    }
+
+    .footer_info p {
+        font-size: 14px;
+        width: 40%;
+    }
+
+    .footer_info1 {
+        font-size: 14px;
+    }
+    .footer_rss a {
+        font-size: 12px;
+    }
+
+    .footer_rss p {
+        font-size: 12px;
+    }
+    .footer_rss {
+        margin: 30px 0;
+    }
+
 }
