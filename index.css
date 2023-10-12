@@ -1027,6 +1027,7 @@ footer hr {
 
     .desserts_cakes {
         width: 100%;
+        margin-top: 40px;
     }
 
     .cards {
@@ -1053,6 +1054,7 @@ footer hr {
 
     .contact_info img {
         width: 100%;
+        margin-top: 20px;
     }
 
 
@@ -1130,13 +1132,22 @@ footer hr {
         max-width: 320px;
     }
 
+    .menu hr {
+        width: 50px;
+    }
+
     .cards {
         margin: 20px 20px;
+    }
+
+    .senior_staff p {
+        font-size: 18px;
     }
 
     .find_card {
         width: 100%;
     }
+
     .check_card p {
         font-size: 28px;
     }
@@ -1154,13 +1165,15 @@ footer hr {
     .footer_info1 {
         font-size: 14px;
     }
+
     .footer_rss a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .footer_rss p {
-        font-size: 12px;
+        font-size: 11px;
     }
+
     .footer_rss {
         margin: 30px 0;
     }
