@@ -429,7 +429,7 @@ main {
     transition: 0.3s;
 }
 
-.book button:hover {
+.book button:active {
     background-color: #BB945F;
     transform: scale(1.1);
 }
@@ -440,7 +440,7 @@ main {
     transition: none;
 }
 
-.own button:hover {
+.own button:active {
     background-color: #FFF;
     transform: none;
 
@@ -800,7 +800,7 @@ main {
 
 }
 
-.cards button:hover {
+.cards button:active {
     background-color: #BB945F;
     transform: scale(1.1);
 }
