@@ -1042,7 +1042,7 @@ z-index: 1;
     }
     .seasons {
         margin: 40px auto;
-        max-width: 400px;
+        max-width: 300px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1056,4 +1056,5 @@ z-index: 1;
 .book {
     max-width: 320px;
 }
+
 }
