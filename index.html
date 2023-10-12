@@ -14,24 +14,35 @@
     <div class="wrapper">
         <header>
             <h1>Brooklyn Public Library</h1>
-            <nav class="menu_head">
-                <ul>
-                    <li>About</li>
-                    <li>Favorites</li>
-                    <li>Coffee shop</li>
-                    <li>Contacts</li>
-                    <li>Library Card</li>
-                </ul>
-                </nav><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <section class="menu_nav">
+                <nav id="nav">
+                    <ul id="nav_ul">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#favorites">Favorites</a></li>
+                        <li><a href="#coffe_shop">Coffee shop</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#LibraryCard">Library Card</a></li>
+                    </ul>
+                </nav>
+                <div class="svg_sm"><svg class="pic_nav" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                    fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
                         fill="white" />
                 </svg>
-            
+                <div class="burger_menu" id="burger_menu">
+                    <span class="burger_menu_first burger" id="burger"></span>
+                    <!-- <span class="burger_menu_second burger"></span>
+                    <span class="burger_menu_third burger"></span> -->
+                </div></div>
+            </section>
+
         </header>
-        <main><section>
-            <img src="img/Welcome.png" alt=""></section>
-            <section class="about">
+        <main>
+            <section id="welcome">
+                <img class="img_welcome" src="img/Welcome.png" alt="">
+            </section>
+            <section id="about">
                 <section class="section-title">
                     <h2>About</h2>
                     <hr>
@@ -44,38 +55,51 @@
                     <img src="img/image3.png" alt="">
 
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="16" viewBox="0 0 68 16" fill="none">
+                <div class="button_about">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <rect x="5" y="5" width="16" height="16" rx="8" fill="#BB945F" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <rect x="5" y="5" width="16" height="16" rx="8" fill="#0C0C0E" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <rect x="5" y="5" width="16" height="16" rx="8" fill="#0C0C0E" />
+                    </svg>
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="68" height="16" viewBox="0 0 68 16" fill="none">
                     <rect width="16" height="16" rx="8" fill="#BB945F" />
                     <rect x="26" width="16" height="16" rx="8" fill="#0C0C0E" />
                     <rect x="52" width="16" height="16" rx="8" fill="#0C0C0E" />
-                </svg>
+                </svg> -->
             </section>
-            <div class="favorites">
+            <div id="favorites">
                 <section class="section-title">
                     <h2>Favorites</h2>
                     <hr>
                 </section>
-                <p>Pick <span> favorites of season</span></p>
+                <div class="pick">
+                    <p>Pick <span> favorites of season</span></p>
+                </div>
                 <div class="seasons">
-                    <!-- <div class="check_seasons">
-                    <input type="radio" name="season" id="season1" checked>
-                    <label for="season1">Winter</label>
-                </div>
-                <div class="check_seasons">
-                    <input type="radio" id="season2"name="season">
-                    <label for="season2">Spring</label>
-                </div>
-                <div class="check_seasons">
-                    <input type="radio" id="season3"name="season">
-                    <label for="season3">Summer</label>
-                </div>
-                <div class="check_seasons">
-                    <input type="radio"id="season4"name="season">
-                    <label for="season4">Autumn</label>
-
-                </div> -->
-
                     <div class="check_seasons">
+                        <input type="radio" name="season" id="season" checked>
+                        <label for="season1">Winter</label>
+                    </div>
+                    <div class="check_seasons">
+                        <input type="radio" id="season2" name="season">
+                        <label for="season2">Spring</label>
+                    </div>
+                    <div class="check_seasons">
+                        <input type="radio" id="season3" name="season">
+                        <label for="season3">Summer</label>
+                    </div>
+                    <div class="check_seasons">
+                        <input type="radio" id="season4" name="season">
+                        <label for="season4">Autumn</label>
+
+                    </div>
+
+                    <!-- <div class="check_seasons">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                             <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
                             <circle cx="8.5" cy="8.5" r="3.5" fill="black" />
@@ -99,7 +123,7 @@
                             <circle cx="8.5" cy="8.5" r="7.5" stroke="black" stroke-width="2" />
                         </svg>
                         <p> Autumn</p>
-                    </div>
+                    </div> -->
 
                 </div>
                 <div class="books">
@@ -110,9 +134,12 @@
                         </div>
                         <h5>The Book Eaters</h5>
                         <h6>By Sunyi Dean</h6>
-                        <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous
-                            mind-eater son from tradition and certain death. Complete with dysfunctional family values,
-                            light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                        <p>An unusual sci-fi story about a book eater woman who tries desperately to save her
+                            dangerous
+                            mind-eater son from tradition and certain death. Complete with dysfunctional family
+                            values,
+                            light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.
+                        </p>
                         <button>Buy</button>
                         <img src="img/book1.png" alt="">
                     </div>
@@ -125,7 +152,8 @@
                         <h6>By Rachel Harrison</h6>
                         <p>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no
                             further
-                            than here - where a woman recovering from a breakup moves to a quaint town in upstate New
+                            than here - where a woman recovering from a breakup moves to a quaint town in upstate
+                            New
                             York
                             and befriends a beautiful witch.</p>
                         <button>Buy</button>
@@ -140,29 +168,32 @@
                         </h5>
                         <h6>By Erich Auerbach</h6>
                         <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and
-                            philosophy in general, arguing for Dante's uniqueness as one who raised the individual and
+                            philosophy in general, arguing for Dante's uniqueness as one who raised the individual
+                            and
                             his
-                            drama of soul into something of divine significance—an inspired introduction to Dante's main
+                            drama of soul into something of divine significance—an inspired introduction to Dante's
+                            main
                             themes.</p>
                         <button>Buy</button>
                         <img src="img/book3.png" alt="">
                     </div>
-                    <div class="book">
-                        <div class="staff_pick">
+                    <div class="own book ">
+                        <div class="staff_pick ">
                             <h4>Staff Picks</h4>
                             <hr>
                         </div>
                         <h5>The Last Queen
                         </h5>
                         <h6>By Clive Irving</h6>
-                        <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the
+                        <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how
+                            the
                             Windsors have evolved and thrived as the modern world has changed around them.</p>
-                        <button>Buy</button>
+                        <button disabled>Own</button>
                         <img src="img/book4.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="coffe_shop">
+            <div id="coffe_shop">
                 <section class="section-title">
                     <h2>Coffee Shop</h2>
                     <hr>
@@ -170,7 +201,8 @@
                 <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and
                     friendly
                     conversation. <br>
-                    You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also
+                    You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and
+                    also
                     you
                     can try desserts from bakery.</p>
                 <section class="menu">
@@ -178,32 +210,32 @@
                         <h5>Coffee & Tea</h5>
                         <ul>
                             <li>
-                                <p>Cold Brew Coffee</p>
+                                <h6>Cold Brew Coffee</h6>
                                 <hr>
                                 <p>$3</p>
                             </li>
                             <li>
-                                <p>French Press Pot</p>
+                                <h6>French Press Pot</h6>
                                 <hr>
                                 <p>$5</p>
                             </li>
                             <li>
-                                <p>Espresso</p>
+                                <h6>Espresso</h6>
                                 <hr>
                                 <p>$2</p>
                             </li>
                             <li>
-                                <p>Cappuccino</p>
+                                <h6>Cappuccino</h6>
                                 <hr>
                                 <p>$4</p>
                             </li>
                             <li>
-                                <p>Hot tea</p>
+                                <h6>Hot tea</h6>
                                 <hr>
                                 <p>$2</p>
                             </li>
                             <li>
-                                <p>Cold tea</p>
+                                <h6>Cold tea</h6>
                                 <hr>
                                 <p>$2</p>
                             </li>
@@ -246,7 +278,7 @@
                     </div>
                 </section>
             </div>
-            <div class="contacts">
+            <div id="contacts">
                 <section class="section-title">
                     <h2>Our Contact</h2>
                     <hr>
@@ -255,20 +287,20 @@
                     <div class="contact">
                         <h5>For all Library inquiries:</h5>
                         <div class="phone_info">
-                            <p>Please call (617) 730-2370</p>
-                            <p>For TTY service, please call (617) 730-2370</p>
-                            <p>Putterham Library: (617) 730-2385</p>
+                            <a href="tel:(617) 730-2370">Please call (617) 730-2370</a>
+                            <a href="tel:(617) 730-2370">For TTY service, please call (617) 730-2370</a>
+                            <a href="tel:(617) 730-2385">Putterham Library: (617) 730-2385</a>
                         </div>
                         <div class="senior_staff">
                             <h5>Senior Staff</h5>
-                            <p>Library Director: <span>Amanda Hirst</span></p>
+                            <p>Library Director: <a href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></p>
                         </div>
                     </div>
                     <img src="img/Rectangle4.png" alt="">
                 </section>
 
             </div>
-            <div class="LibraryCard">
+            <div id="LibraryCard">
                 <section class="section-title">
                     <h2>Digital Library Cards</h2>
                     <hr>
@@ -287,16 +319,20 @@
                     </div>
                     <div class="get_card">
                         <h6>Get a reader card</h6>
-                        <p>You will be able to see a reader card after logging into account or you can register a new
+                        <p>You will be able to see a reader card after logging into account or you can register a
+                            new
                             account</p>
-                        <div class="bit_card"> <button>Sign Up</button><button>Log in</button></div>
+                        <div class="bit_card">
+                            <button>Sign Up</button><button>Log in</button>
+                        </div>
                     </div>
                 </section>
 
             </div>
             <footer>
                 <div class="footer_info">
-                    <p>286 Cadman Plaza, New York, <br> NY 11238, United States</p>
+                    <a href="https://yandex.by/maps/geo/moskva/53000094/?ll=37.385534%2C55.584227&z=9.52">286 Cadman
+                        Plaza, New York, <br> NY 11238, United States</a>
                     <p>Mon - Fri <br> 08:00 am - 07:00 pm</p>
                 </div>
                 <div class="footer_info1">
@@ -321,8 +357,8 @@
                 <hr>
                 <div class="footer_rss">
                     <p>2023</p>
-                    <p>The Rolling Scopes School</p>
-                    <p>Username</p>
+                    <a href="https://rs.school/js-stage0/ ">The Rolling Scopes School</a>
+                    <p>AlexanderFix</p>
                 </div>
             </footer>
         </main>
