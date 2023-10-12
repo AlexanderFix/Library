@@ -22,7 +22,7 @@ header {
     width: 100%;
     height: 90px;
     background: #0C0C0E;
-    
+    z-index: 10;
 }
 
 header h1 {
@@ -209,7 +209,9 @@ main {
     padding: 20px;
     margin-bottom: 40px ; */
 }
-
+.image_about_sm {
+    display: none;
+}
 .image_about img {
     width: 32%;
     /* max-width: 450px; */
@@ -321,7 +323,6 @@ main {
     margin: 0 50px 40px 0;
     max-width: 550px;
     width: 100%;
-    height: 555px;
     flex-shrink: 0;
     border: 1px solid #000;
     background: #FFF;
@@ -329,7 +330,7 @@ main {
 }
 
 .book p {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 60px 20px;
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -921,7 +922,15 @@ footer hr {
     letter-spacing: 2px;
     margin-left: 90px;
 }
+@media (max-width: 1230px) {
 
+    .books {
+flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1145px) {
     .menu_nav {
         align-self: start;
@@ -935,21 +944,21 @@ footer hr {
         order: 2;
         transition: .3s all;
         width: 200px;position: relative;
-        overflow: hidden;
-        margin-top: 1px;
+        overflow: visible;
         
+        z-index: 2;
     }
     nav ul {position: absolute;
-        top: 0;
-        right: -10%;
-        background-color: #000;
+        top: -500px;
+        right: 0;
+        background-color: #0C0C0E;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
         transition: .3s all;
-
+z-index: 1;
     }
     nav li {
         text-align: center;
@@ -957,9 +966,8 @@ footer hr {
     }
     .nav_active {
         display: block;
-        right: 0;
         overflow:visible;
-    
+    top: 0;
     }
 
     .burger_menu {
@@ -968,9 +976,12 @@ footer hr {
 
   .svg_sm{height: 90px;
     display: flex;
-    
+    z-index: 3;
     align-items: center;
-   
+    justify-content: center;
+   background-color: #0C0C0E;
+   width: 100%;
+
   }
   .check_seasons{
     margin-right: 20px;
@@ -1001,12 +1012,20 @@ footer hr {
     }
 }
 
-@media (max-width: 1230px) {
-
-    .books {
-flex-direction: column;
-        align-items: center;
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .image_about_sm {
+        display: block;
         margin: 0 auto;
+    }
+    .image_about {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .book{
+        max-width: 450px;
+    }
+    .book p {
+        width: 60%;
     }
 }
