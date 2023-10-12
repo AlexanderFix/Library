@@ -1033,7 +1033,7 @@ z-index: 1;
     }
     .book{
         max-width: 350px;
-        
+        margin-left: 5px;
     }
     .book p {
         width: 100%;
@@ -1051,5 +1051,5 @@ z-index: 1;
 @media screen and (max-width: 500px) {
     header h1 {
         font-size: 20px;
-    }
+}
 }
