@@ -1137,6 +1137,9 @@ footer hr {
     .find_card {
         width: 100%;
     }
+    .check_card p {
+        font-size: 28px;
+    }
 
     .footer_info a {
         font-size: 14px;
