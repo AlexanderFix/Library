@@ -1046,6 +1046,7 @@ z-index: 1;
         flex-wrap: wrap;
         justify-content: center;
     }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -1056,5 +1057,7 @@ z-index: 1;
 .book {
     max-width: 320px;
 }
-
+.menu li {
+        gap: 15px;
+    }
 }
