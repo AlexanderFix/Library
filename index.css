@@ -149,7 +149,7 @@ main {
 #welcome {
     width: 100%;
     height: 600px;
-    background: url(./img/Welcome.png);
+    background: url(../img/Welcome.png);
 }
 
 #welcome img {
