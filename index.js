@@ -13,11 +13,11 @@ burger_menu.addEventListener('click', () => {
 
 function slider(e) {
   
-        slider_img_1.style.left = `${-e}px`;
-        slider_img_2.style.left = `${-e}px`;
-        slider_img_3.style.left = `${-e}px`;
-        slider_img_4.style.left = `${-e}px`;
-        slider_img_5.style.left = `${-e}px`;
+        slider_img_1.style.left = `${-e}%`;
+        slider_img_2.style.left = `${-e}%`;
+        slider_img_3.style.left = `${-e}%`;
+        slider_img_4.style.left = `${-e}%`;
+        slider_img_5.style.left = `${-e}%`;
 
     }
 
@@ -36,7 +36,7 @@ btn_2.addEventListener('click', () => {
     btn_1.children[0].setAttribute('fill', '#0C0C0E')
     btn_3.children[0].setAttribute('fill', '#0C0C0E')
 
-    slider(474)
+    slider(34.15)
 })
 
 btn_3.addEventListener('click', () => {
@@ -45,7 +45,7 @@ btn_3.addEventListener('click', () => {
     btn_1.children[0].setAttribute('fill', '#0C0C0E')
     btn_2.children[0].setAttribute('fill', '#0C0C0E')
     
-    slider(950)
+    slider(68.35)
 })
 
 
