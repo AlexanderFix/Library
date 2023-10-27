@@ -36,7 +36,7 @@ btn_2.addEventListener('click', () => {
     btn_1.children[0].setAttribute('fill', '#0C0C0E')
     btn_3.children[0].setAttribute('fill', '#0C0C0E')
 
-    slider(34.15)
+    slider(33.8)
 })
 
 btn_3.addEventListener('click', () => {
@@ -45,7 +45,7 @@ btn_3.addEventListener('click', () => {
     btn_1.children[0].setAttribute('fill', '#0C0C0E')
     btn_2.children[0].setAttribute('fill', '#0C0C0E')
     
-    slider(68.35)
+    slider(67.8)
 })
 
 
