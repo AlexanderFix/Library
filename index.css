@@ -1100,20 +1100,26 @@ footer hr {
         padding: 0 20px;
         height: 100%;
     }
-
-    .abot_sm {
-        display: inline-flex;
+.abot_sm {
+    display: inline-flex;
         justify-content: center;
         align-items: center;
-        gap: 45px;
+       
         padding-top: 20px;
         margin-bottom: 5px;
+        width: 100%;
+}
+    .about_slider {
+        width: 80%;
+        display: flex;
+        overflow: hidden;
+        max-width: 450px;
     }
 
     .abot_sm img {
         /* margin: 0 40px; */
         max-width: 450px;
-        width: 80%;
+        width: 100%;
     }
 
 

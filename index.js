@@ -48,6 +48,19 @@ btn_3.addEventListener('click', () => {
     slider(67.8)
 })
 
+// One pic slider
+let aboutImg = document.querySelectorAll('.abot_sm img')
+let aboutSm = document.getElementsByClassName('abot_sm')
+count = 0;
+let width;
+
+function init () {
+    width = document.querySelector('.about_slider').offsetWidth;
+    
+}
+
+
+
 
 
 
